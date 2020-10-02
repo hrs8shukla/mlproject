@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediciton</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="/predict" method="post">
+            <h2>Loan Prediction</h2>
+ <h3>Gender</h3><br>
+<input id="Gender" name="Gender" placeholder="Male or Female" required="required">
+<h3>Married</h3><br>
+<input id="Married" name="Married" placeholder="Yes or No " required="required">
+<h3>Dependents</h3><br>
+<input id="Dependents" name="Dependents" placeholder="0,1,2 or 3+" required="required">
+<h3>Education</h3><br>
+<input id="Education" name="Education" placeholder="Graduate or Non Graduate" required="required">
+<h3>Self_Employed</h3><br>
+<input id="Self_Employed" name="Self_Employed" placeholder="Yes or NO" required="required">
+<h3>ApplicantIncome</h3><br>
+<input id="ApplicantIncome" name="ApplicantIncome" required="required">
+<h3>CoapplicantIncome</h3><br>
+<input id="CoapplicantIncome" name="CoapplicantIncome" required="required">
+<h3>LoanAmount</h3><br>
+<input id="LoanAmount" name="LoanAmount" required="required">
+<h3>Loan_Amount_Term</h3><br>
+<input id="Loan_Amount_Term" name="Loan_Amount_Term" required="required">
+<h3>Credit_History</h3><br>
+<input id="Credit_History" name="Credit_History"placeholder="1 for yes & 0 for No" required="required">
+<h3>Property_Area</h3><br>
+<input id="Property_Area" name="Property_Area" placeholder="Urban or Rural or Semiurban" required="required">
+<h3>Check the Elegibility for Loan</h3>
+<button id="sub" type="submit ">Submit</button>
+            <br>
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+</body>
+
+</html>
